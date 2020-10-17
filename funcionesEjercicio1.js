@@ -102,7 +102,7 @@ window.addEventListener("load",function(){
                 var body = document.getElementById("tCuerpo");
                 var rows = body.rows;              
                 for (var i = 0; i < rows.length; i++) {
-                    if (rows[i].id == idToModify) {
+                    if (rows[i].id == id) {
                         rows[i].firstElementChild.textContent = nombreModificar;
                         rows[i].firstElementChild.nextElementSibling.textContent = cuatrimestreModificar;
                         rows[i].firstElementChild.nextElementSibling.nextElementSibling.textContent = fechaFinalModificar;
