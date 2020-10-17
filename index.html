@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./estiloEjercicio1.css"> <!--para llamar al css no uso script-->
+    <script type="text/javascript" src="./funcionesEjercicio1.js"></script>
+    <title>Primer Parcial Labo3 Ravainera Luciano</title>
+</head>
+<body>
+    <img src="./cargando.gif" id="spinner" >
+    <h1>Lista de personas</h1>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha Final</th>
+                    <th>Turno</th>
+                </thead>
+                <tbody id="tCuerpo" ondblclick="trerDatos(event)">
+                    <tr><!--defino una columna en la tabla-->                        
+                    </tr>
+                    <tr><!--defino una columna en la tabla-->                      
+                    </tr>
+                    <tr><!--defino una columna en la tabla-->                        
+                    </tr>
+                </tbody>
+            </table>
+            <div class="divisor" id="div" hidden>
+                <h2>Datos de la materia</h2>
+                <div class="divCerrar"><input type="button" value="X" id="btnCerrar"></div>
+                <label for="txtnom">Nombre:</label><br>
+                <input type="text" name="nombre" class="sinError" id="txtnom"><br>
+                <input type="text" name="id"  id="txtid" hidden><br>
+                <label for="selectcuatri">Cuatrimestre:</label>
+                <select id="selectcuatri" name="selectcuatri" form="carform">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option></select><br>
+                <label for="txtfecha">Fecha:</label><br>
+                <input type="date" id="txtfecha" name="txtfecha" class="sinError" ><br>
+                <label for="radioTurno" id ="radioTurno">Turno:</label>               
+                <input type="radio" name="radioTurno" value="Mañana" id="man">Mañana</label>
+                <input type="radio" name="radioTurno" value="Noche" id="noc"> Noche</label><br>
+                <input type="button" value="Eliminar" id="btnEliminar" >
+                <input type="button" value="Modificar" id="btnGuardar" ><br><br>
+                </div>
+
+
+</body>
+</html>
