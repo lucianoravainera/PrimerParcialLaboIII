@@ -99,7 +99,7 @@ window.addEventListener("load",function(){
             if(peticionHttp.readyState==4){
                 if(peticionHttp.status==200){
                     
-                var body = document.getElementById("tblBody");
+                var body = document.getElementById("tCuerpo");
                 var rows = body.rows;              
                 for (var i = 0; i < rows.length; i++) {
                     if (rows[i].id == idToModify) {
